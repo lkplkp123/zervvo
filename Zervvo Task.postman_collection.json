@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "81779be4-8471-4766-ab48-ffe38d746b4a",
+		"name": "Zervvo Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16701952",
+		"_collection_link": "https://martian-space-76831.postman.co/workspace/karuppaiah~cbb55273-a156-47d9-b44c-548d849b2c19/collection/16701952-81779be4-8471-4766-ab48-ffe38d746b4a?action=share&source=collection_link&creator=16701952"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"lkplkp\",\r\n  \"email\": \"lkp@gmail.com\",\r\n  \"password\": \"lkplkp\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"email\": \"sample@gmail.com\",\r\n  \"password\": \"sample\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"J.K. Rowling\",\r\n  \"biography\": \"Famous British author and philanthropist.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"J.K. Rowling\",\r\n  \"biography\": \"Famous British author and philanthropist.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authors List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Author Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/authors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Harry Potter and the Sorcerer's Stone\",\r\n  \"author_id\": 1,\r\n  \"genre\": \"Fantasy\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books and Author ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/books/author/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Harry Potter and the Chamber of Secrets\",\r\n  \"author_id\": 1,\r\n  \"genre\": \"Fantasy\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInVzZXJuYW1lIjoic2FtcGxlIiwiZW1haWwiOiJzYW1wbGVAZ21haWwuY29tIiwiaWF0IjoxNzM2Njk2NjU4LCJleHAiOjE3MzY3MDAyNTh9.UbMBShzOnIxYabRp2saBnwjakv7k9xLg8g8Fr3gCoTs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
